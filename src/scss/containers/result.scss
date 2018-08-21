@@ -1,0 +1,44 @@
+.right-side {
+  background-color: #140757;
+  width: 35%;
+  height: 550px;
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+.content {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+}
+.monthly-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+.monthly-fee {
+  font-size: 65px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+.common.button {
+  background-color: #3fb360;
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+  padding: 15px 35px;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 110px;
+  margin-left: 60px;
+}
+.link {
+  margin-top: 20px;
+}
+.call-link {
+  color: #ffffff;
+  margin-left: 10px;
+}
