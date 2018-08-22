@@ -1,1 +1,1 @@
-export const SERVER_PATH = 'http://localhost:8081/v1';
+export const SERVER_PATH = 'http://localhost:8080/v1';

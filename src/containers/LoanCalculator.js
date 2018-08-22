@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Result from "./Result";
 import Calculation from "./Calculation";
 import {injectIntl} from "react-intl";
-import {calculateFetch} from "../utils/fetchUtils";
+import {calculateLoanFetch} from "../utils/fetchUtils";
 import {INITIAL_MONEY, INITIAL_MONTH_FEE, INITIAL_MONTHS, INITIAL_OVERALL_FEE} from "../constants/InitialConstants";
 import {radioOptionYes, radioOptionNo} from "../constants/ComponentConstants";
 
@@ -79,11 +79,17 @@ class LoanCalculator extends Component {
     calculateHandler = () => {
         const {money, months} = this.state;
         const {intl} = this.props;
-        calculateFetch(money, months, intl);
+        calculateLoanFetch(money, months, intl, (data) => {
+            this.setState({
+                monthFee: data.monthFee,
+                overallFee: data.overallFee
+            })
+        });
     };
 
-    render() {
 
+
+    render() {
         const {selectedOption, money, months, overallFee, monthFee} = this.state;
 
         return (
