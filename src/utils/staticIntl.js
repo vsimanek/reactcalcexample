@@ -1,6 +1,6 @@
-import {IntlProvider} from "react-intl";
-import cs from "../locale/cs";
+import { IntlProvider } from 'react-intl'
+import cs from '../locale/cs'
 
-const staticIntl = new IntlProvider({messages : cs, locale: "cs"}).getChildContext().intl;
+const staticIntl = new IntlProvider({ messages: cs, locale: 'cs' }).getChildContext().intl
 
-export default staticIntl;
+export default staticIntl

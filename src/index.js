@@ -1,6 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import "./config/staticInit";
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import App from './App'
+import './config/staticInit'
+
+ReactDOM.render(<App/>, document.getElementById('root'))

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -25,7 +26,11 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^1.0.0",
+    "eslint": "^6.5.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
     "html-webpack-plugin": "^3.2.0",
+    "prettier": "^1.18.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-intl": "^2.4.0",
@@ -37,6 +42,7 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "node-sass": "^4.9.3",
+    "prop-types": "^15.6.2",
     "react-rangeslider": "^2.2.0",
     "sass-loader": "^7.1.0"
   }

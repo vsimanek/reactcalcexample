@@ -1,0 +1,10 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "semi": [2, "never"],
+    "space-in-parens": [
+      1,
+      "always"
+    ]
+  }
+}
